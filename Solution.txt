@@ -43,4 +43,6 @@ cd clone
 git clone https://github.com/Nomaan3287/assignment.git
 notepad Solotion.txt
 
+git add Solution.txt
+git commit -m 'final commit'
 git push origin master
