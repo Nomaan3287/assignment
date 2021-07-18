@@ -1,0 +1,46 @@
+mkdir assignment
+cd assignment/
+git init
+notepad text1.py
+notepad text2.py
+notepad text3.py
+ls
+git add .
+git status
+git commit -m 'first commit'
+git log
+git branch Dev
+git branch Test
+git branch
+
+git checkout Dev
+git add text1.py
+git commit -m 'text1.py added to dev branch'
+
+git checkout Dev
+git add text2.py
+git add text3.py
+git commit -m 'text2.py text3.py added to Test branch'
+
+git checkout Dev
+notepad text1.py
+git diff 
+git status
+git add text1.py
+git commit -m 'chnged first file'
+
+git checkout master
+git merge Test
+git merge Dev
+
+git remote add origin https://github.com/Nomaan3287/assignment.git
+git push origin master
+
+
+cd ..
+mkdir clone
+cd clone
+git clone https://github.com/Nomaan3287/assignment.git
+notepad Solotion.txt
+
+git push origin master
